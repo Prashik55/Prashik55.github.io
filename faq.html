@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | Cream & Flutter</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .faq-container { max-width: 900px; margin: 3em auto; }
+        .faq-accordion { background: #fff; border-radius: 1em; box-shadow: 0 2px 12px #ff3c5d22; margin-bottom: 1em; }
+        .faq-question { cursor: pointer; padding: 1.2em 1.5em; font-size: 1.1em; color: #ff3c5d; font-weight: bold; border-bottom: 1px solid #ffb6d5; background: linear-gradient(90deg,#ff3c5d11,#ffb6d511); border-radius: 1em 1em 0 0; }
+        .faq-answer { display: none; padding: 1.2em 1.5em; color: #333; background: #fff; border-radius: 0 0 1em 1em; }
+        .faq-accordion.open .faq-answer { display: block; }
+        .faq-accordion.open .faq-question { background: linear-gradient(90deg,#ff3c5d22,#ffb6d522); }
+        .faq-images { display: flex; gap: 1em; justify-content: center; margin-bottom: 2em; }
+        .faq-images img { width: 120px; border-radius: 1em; box-shadow: 0 2px 12px #ff3c5d22; }
+    </style>
+</head>
+<body>
+<header>
+    <div class="header-inner">
+        <div class="logo">Cream & Flutter</div>
+        <div class="hamburger" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <a href="index.html#home">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="menu.html">Menu</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+            <a href="terms.html" target="_blank">Terms</a>
+            <a href="privacy.html" target="_blank">Privacy</a>
+        </nav>
+    </div>
+</header>
+<!-- Hero Section -->
+<div class="hero-banner" style="width:100vw;position:relative;overflow:hidden;">
+    <img src="images/Almond_Snicker.jpg" alt="FAQ Hero" style="width:100vw;max-height:420px;object-fit:cover;display:block;">
+    <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(90deg,rgba(255,60,93,0.45),rgba(255,182,213,0.35));display:flex;flex-direction:column;justify-content:center;align-items:center;">
+        <h1 style="color:#fff;font-size:3em;text-shadow:0 2px 12px #ff3c5d;letter-spacing:2px;margin-bottom:0.2em;">FAQ</h1>
+        <div style="color:#fff;font-size:1.5em;text-shadow:0 1px 8px #ff3c5d;">Your questions answered</div>
+    </div>
+</div>
+<main style="padding:60px 0; background:linear-gradient(90deg,#ff3c5d0d,#ffb6d50d);">
+    <div class="faq-container">
+        <h1 style="color:#ff3c5d;text-align:center;">Frequently Asked Questions</h1>
+        <div class="faq-images">
+            <img src="images/Blueberry_Cup_Cake.jpg" alt="FAQ 1">
+            <img src="images/Divine_Chocolate.jpg" alt="FAQ 2">
+            <img src="images/Almond_Snicker.jpg" alt="FAQ 3">
+        </div>
+        <div class="faq-accordion">
+            <div class="faq-question">What are your operating hours?</div>
+            <div class="faq-answer">Our cafe and bakery are open from 10.00 am to 11.00 pm, every day.</div>
+        </div>
+        <div class="faq-accordion">
+            <div class="faq-question">Do you offer takeout and delivery?</div>
+            <div class="faq-answer">Yes, we offer takeout and delivery through our partners Swiggy & Zomato.</div>
+        </div>
+        <div class="faq-accordion">
+            <div class="faq-question">Do you have sugar-free, gluten-free, or vegan options?</div>
+            <div class="faq-answer">Yes, we have sugar-free, gluten-free, Jain, and vegan options available.</div>
+        </div>
+        <div class="faq-accordion">
+            <div class="faq-question">How do I place an order?</div>
+            <div class="faq-answer">You can place an order in-person, through our website, email, on call (Limited time), Swiggy and Zomato.</div>
+        </div>
+        <div class="faq-accordion">
+            <div class="faq-question">Do you offer custom cake designs?</div>
+            <div class="faq-answer">Yes, we can create custom cakes for special occasions. Contact us for details!</div>
+        </div>
+        <div class="faq-accordion">
+            <div class="faq-question">How can I contact you?</div>
+            <div class="faq-answer">You can reach us at info@creamandflutter.in or call +91-8291668767.</div>
+        </div>
+    </div>
+</main>
+<footer style="background:linear-gradient(90deg,#ff3c5d 0%,#ffb6d5 100%);color:#fff;padding:2em 0 1em 0;text-align:center;">
+    <div style="max-width:1100px;margin:auto;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1em;">
+        <div style="font-size:1.2em;font-weight:bold;">Cream & Flutter &copy; 2024</div>
+        <div>
+            <a href="about.html" style="color:#fff;margin:0 1em;text-decoration:underline;">About</a>
+            <a href="menu.html" style="color:#fff;margin:0 1em;text-decoration:underline;">Menu</a>
+            <a href="faq.html" style="color:#fff;margin:0 1em;text-decoration:underline;">FAQ</a>
+            <a href="contact.html" style="color:#fff;margin:0 1em;text-decoration:underline;">Contact</a>
+            <a href="terms.html" target="_blank" style="color:#fff;margin:0 1em;text-decoration:underline;">Terms</a>
+            <a href="privacy.html" target="_blank" style="color:#fff;margin:0 1em;text-decoration:underline;">Privacy</a>
+        </div>
+        <div style="font-size:1.1em;">
+            <span style="margin:0 0.5em;">📞 +91-8291668767</span>
+            <span style="margin:0 0.5em;">✉️ info@creamandflutter.in</span>
+        </div>
+    </div>
+    <div style="margin-top:1em;font-size:0.9em;opacity:0.8;">Follow us:
+        <a href="#" style="color:#fff;margin:0 0.5em;">Instagram</a>|
+        <a href="#" style="color:#fff;margin:0 0.5em;">Facebook</a>|
+        <a href="#" style="color:#fff;margin:0 0.5em;">Twitter</a>
+    </div>
+</footer>
+<script>
+// Hamburger menu toggle
+const hamburger = document.getElementById('hamburger-menu');
+const nav = document.querySelector('.header-inner nav');
+hamburger.addEventListener('click', function() {
+    nav.classList.toggle('open');
+});
+document.querySelectorAll('.header-inner nav a').forEach(link => {
+    link.addEventListener('click', () => {
+        nav.classList.remove('open');
+    });
+});
+// FAQ accordion logic
+const accordions = document.querySelectorAll('.faq-accordion');
+accordions.forEach(acc => {
+    acc.querySelector('.faq-question').addEventListener('click', function() {
+        acc.classList.toggle('open');
+    });
+});
+</script>
+</body>
+</html> 

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Cream & Flutter</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-container { max-width: 900px; margin: 3em auto; display: flex; flex-wrap: wrap; gap: 2em; align-items: flex-start; }
+        .contact-info { flex: 1 1 300px; background: linear-gradient(90deg,#ff3c5d11,#ffb6d511); border-radius: 1em; box-shadow: 0 2px 12px #ff3c5d22; padding: 2em; }
+        .contact-form { flex: 1 1 300px; background: #fff; border-radius: 1em; box-shadow: 0 2px 12px #ff3c5d22; padding: 2em; }
+        .contact-form input, .contact-form textarea { width: 100%; padding: 0.7em; margin-bottom: 1em; border-radius: 0.5em; border: 1px solid #ffb6d5; }
+        .contact-form button { background: linear-gradient(90deg,#ff3c5d,#ffb6d5); color: #fff; font-weight: bold; padding: 0.7em 2em; border: none; border-radius: 0.5em; cursor: pointer; }
+        .contact-images { display: flex; gap: 1em; margin-top: 2em; }
+        .contact-images img { width: 100px; border-radius: 1em; box-shadow: 0 2px 12px #ff3c5d22; }
+        .map-container { margin-top: 2em; border-radius: 1em; overflow: hidden; box-shadow: 0 2px 12px #ff3c5d22; }
+        @media (max-width: 900px) { .contact-container { flex-direction: column; } }
+    </style>
+</head>
+<body>
+<header>
+    <div class="header-inner">
+        <div class="logo">Cream & Flutter</div>
+        <div class="hamburger" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <a href="index.html#home">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="menu.html">Menu</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+            <a href="terms.html" target="_blank">Terms</a>
+            <a href="privacy.html" target="_blank">Privacy</a>
+        </nav>
+    </div>
+</header>
+<!-- Hero Section -->
+<div class="hero-banner" style="width:100vw;position:relative;overflow:hidden;">
+    <img src="images/Baklava_Finger.jpg" alt="Contact Hero" style="width:100vw;max-height:420px;object-fit:cover;display:block;">
+    <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(90deg,rgba(255,60,93,0.45),rgba(255,182,213,0.35));display:flex;flex-direction:column;justify-content:center;align-items:center;">
+        <h1 style="color:#fff;font-size:3em;text-shadow:0 2px 12px #ff3c5d;letter-spacing:2px;margin-bottom:0.2em;">Contact Us</h1>
+        <div style="color:#fff;font-size:1.5em;text-shadow:0 1px 8px #ff3c5d;">We'd love to hear from you</div>
+    </div>
+</div>
+<main style="padding:60px 0; background:linear-gradient(90deg,#ff3c5d0d,#ffb6d50d);">
+    <div class="contact-container">
+        <div class="contact-info">
+            <h1 style="color:#ff3c5d;">Contact Us</h1>
+            <p style="font-size:1.1em;">Have a question or want to place an order? Reach out to us!</p>
+            <p><b>Email:</b> <a href="mailto:info@creamandflutter.in" style="color:#ff3c5d;">info@creamandflutter.in</a></p>
+            <p><b>Mobile:</b> +91-8291668767<br><b>Land line:</b> +91-2231668767</p>
+            <p><b>Address:</b><br>Smruti Building, Plot 85/89, Ground Floor,<br>Walkeshwar Road, Malabar Hill, Mumbai 400006.</p>
+            <div class="contact-images">
+                <img src="images/Blueberry_Cup_Cake.jpg" alt="Contact 1">
+                <img src="images/Divine_Chocolate.jpg" alt="Contact 2">
+            </div>
+        </div>
+        <form class="contact-form">
+            <h2 style="color:#ff3c5d;">Send us a message</h2>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <div class="map-container" style="max-width:900px;margin:2em auto 0;">
+        <iframe src="https://www.google.com/maps?q=Smruti+Building,+Plot+85/89,+Ground+Floor,+Walkeshwar+Road,+Malabar+Hill,+Mumbai+400006&output=embed" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</main>
+<footer style="background:linear-gradient(90deg,#ff3c5d 0%,#ffb6d5 100%);color:#fff;padding:2em 0 1em 0;text-align:center;">
+    <div style="max-width:1100px;margin:auto;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1em;">
+        <div style="font-size:1.2em;font-weight:bold;">Cream & Flutter &copy; 2024</div>
+        <div>
+            <a href="about.html" style="color:#fff;margin:0 1em;text-decoration:underline;">About</a>
+            <a href="menu.html" style="color:#fff;margin:0 1em;text-decoration:underline;">Menu</a>
+            <a href="faq.html" style="color:#fff;margin:0 1em;text-decoration:underline;">FAQ</a>
+            <a href="contact.html" style="color:#fff;margin:0 1em;text-decoration:underline;">Contact</a>
+            <a href="terms.html" target="_blank" style="color:#fff;margin:0 1em;text-decoration:underline;">Terms</a>
+            <a href="privacy.html" target="_blank" style="color:#fff;margin:0 1em;text-decoration:underline;">Privacy</a>
+        </div>
+        <div style="font-size:1.1em;">
+            <span style="margin:0 0.5em;">📞 +91-8291668767</span>
+            <span style="margin:0 0.5em;">✉️ info@creamandflutter.in</span>
+        </div>
+    </div>
+    <div style="margin-top:1em;font-size:0.9em;opacity:0.8;">Follow us:
+        <a href="#" style="color:#fff;margin:0 0.5em;">Instagram</a>|
+        <a href="#" style="color:#fff;margin:0 0.5em;">Facebook</a>|
+        <a href="#" style="color:#fff;margin:0 0.5em;">Twitter</a>
+    </div>
+</footer>
+<script>
+// Hamburger menu toggle
+const hamburger = document.getElementById('hamburger-menu');
+const nav = document.querySelector('.header-inner nav');
+hamburger.addEventListener('click', function() {
+    nav.classList.toggle('open');
+});
+document.querySelectorAll('.header-inner nav a').forEach(link => {
+    link.addEventListener('click', () => {
+        nav.classList.remove('open');
+    });
+});
+</script>
+</body>
+</html> 
