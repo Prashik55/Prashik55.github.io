@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Products - Cream & flutter</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    .order-btn {
+        display: inline-block;
+        background: var(--primary-pink);
+        color: #fff !important;
+        padding: 8px 20px;
+        border-radius: 24px;
+        font-weight: 600;
+        border: none;
+        text-align: center;
+        transition: background 0.2s;
+        margin-left: 8px;
+        text-decoration: none;
+    }
+    .order-btn:hover {
+        background: var(--dark-pink);
+        color: #fff;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <figure class="logo">
+                <img src="images/frame2.png" alt="">
+            </figure>
+            <span class="site-name">Cream & flutter</span>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="featured.html">Featured Products</a></li>
+                <li><a href="story.html">Our Story</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="#" class="order-btn" target="_blank" rel="noopener">Order Now</a></li>
+            </ul>
+            <button class="hamburger" aria-label="Open navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+    <main>
+        <section class="featured-items">
+            <h2>Featured Products</h2>
+            <div class="featured-list">
+                <div class="featured-card">
+                    <img src="images/1.png" alt="Featured 1">
+                    <h3>Pink Velvet Latte</h3>
+                    <p>A creamy blend with a hint of rose.</p>
+                    <p class="price">₹ 20</p>
+                </div>
+                <div class="featured-card">
+                    <img src="images/2.png" alt="Featured 2">
+                    <h3>Strawberry Mocha</h3>
+                    <p>Rich chocolate and strawberry fusion.</p>
+                    <p class="price">₹ 25</p>
+                </div>
+                <div class="featured-card">
+                    <img src="images/3.png" alt="Featured 3">
+                    <h3>Berry Bliss Frappe</h3>
+                    <p>Refreshing, fruity, and fun.</p>
+                    <p class="price">₹ 30</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-main">
+            <div class="footer-links">
+                <a href="index.html">Home</a> |
+                <a href="featured.html">Featured Products</a> |
+                <a href="story.html">Our Story</a> |
+                <a href="contact.html">Contact Us</a> |
+                <a href="#" class="order-btn" target="_blank" rel="noopener">Order Now</a>
+            </div>
+            <div class="footer-address">
+                <strong>Cafe Address:</strong><br>
+                123 Pink Street, Pune, India<br>
+                <iframe src="https://www.google.com/maps?q=123+Pink+Street,+Pune,+India&output=embed" width="250" height="120" style="border:0; margin-top:8px; border-radius:8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <p class="footer-copyright">&copy; <span id="footer-year"></span> Cream & flutter. All rights reserved.</p>
+        <p>
+            Designed by <a href="https://www.linkedin.com/in/prashikpatil1886/" target="_blank" rel="noopener">Prashik Patil</a>. 
+            Distributed by <a href="https://lapswift.com/" target="_blank" rel="noopener">Lapswift</a>.
+        </p>
+    </footer>
+    <script src="app.js"></script>
+    <script>
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html> 
